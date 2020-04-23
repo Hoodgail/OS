@@ -1,0 +1,21 @@
+<others> {
+> |help| (SOON)=
+    - sry got nothing to tell u
+
+> |todo| (SOON) =
+    - slide up div
+    - option to change background overlay
+    - add more commands to terminal
+
+}
+
+<versions> {
+> |1| (4/9/1010) =
+    - added dropdown when clicked on the top bar
+    - the wifi  image in the top bar tell if there internet connection
+    - everything blurs when the alert modal pops up
+    - everything blurs when top bar dropsdown
+    - theres a contex menu when right click on apps
+    - the contex menu contains "open", "hide", "show all" 
+    
+    }

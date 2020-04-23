@@ -1,0 +1,145 @@
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://hoodgail.github.io/hood/build/setting.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"
+  ></script>
+</head>
+<script type="text/javascript">
+var idleTime = 0;
+$(document).ready(function () {
+    //Increment the idle time counter every minute.
+    var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function (e) {
+        idleTime = 0;
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+    });
+});
+
+function timerIncrement() {
+    idleTime = idleTime + 1;
+    if (idleTime > 19) { // 20 minutes
+        window.location.reload();
+    }
+}
+</script>   
+<div id="loadingpage">
+  <div></div>
+</div>
+<div class="customAlert2">
+  <div class="message2"></div><br>
+  <input type="button" class="confirmButton2" value="×" />
+</div>
+
+<ul class='custom-menu'>
+   <li data-action="open">Open</li>
+   <li data-action="hide">Hide</li>
+   <li data-action="showall">Show All</li>
+</ul>
+<div id="topContex">
+    <div id="tptop">
+        <h1 id="tptime"></h1>
+        <h3 id="tpdate"></h3>
+    </div>
+    <div id="tbbottom">
+    </div>
+    <div id="tpclose">Close</div>
+</div>
+<div id="OS" oncontextmenu="return false">
+  <!--<div class="moon"></div>-->
+  <div id="top">
+    <div class="customAlert">
+      <p class="message"></p>
+      <input type="button" class="confirmButton" value="×" />
+    </div>
+   
+    <div id="topBar">
+      <div id="topbrdiv">
+        <img
+          src="https://retchhh.files.wordpress.com/2015/03/loading4.gif?w=300&h=300"
+          id="wifi"
+        />
+      </div>
+      <span id="time"></span>
+    </div>
+    <login  id="login">
+      <div class="login-page">
+        <div class="form">
+          <input id="login_username" type="text" placeholder="username" />
+          <input id="login_password" type="password" placeholder="password" />
+          <button id="button_login">login</button>
+          <p id="login_message" class="message"></p>
+        </div>
+      </div>
+      <div class="login-page">
+        <div class="form">
+          <p style="color: white;">username and password is bellow</p>
+          <input value="hoodgail" readonly type="readonly" placeholder="username" />
+          <input value="hoodos" readonly type="readonly" placeholder="password" />
+        </div>
+      </div>
+    </login>
+    <desktop id="desktop"> </desktop>
+    <div id="__browser" class="window">
+      <div id="__browser-bar" class="window-bar">
+        <span id="__close" class="close"></span>
+        <span class="reduce"></span>
+        <strong id="__window_title"></strong>
+      </div>
+      <div class="window-content">
+        <div id="window_data">
+          <div class="window_app" id="window_app_terminal">
+            <div id="terminal">
+              <div id="terminal_out"></div>
+              <div id="terminal_in">
+                <div id="dd">$</div>
+                <input id="terminal_input" value="help" />
+              </div>
+            </div>
+          </div>
+          <div class="window_app" id="window_app_messaging">
+            <iframe
+              class="window_app_iframe"
+              src="./chat.html"
+              id="messaging"
+            ></iframe>
+          </div>
+        <div class="window_app" id="window_app_movieBoxPro">
+          <iframe
+            class="window_app_iframe"
+            src="https://www.movieboxpro.app/index/?authe=yJhcHBfa2V5IjoiNjQwNWMyZTYwNDVmNjU5YjdmZGNkOTU3ZmU1MmZlOWEiLCJ2ZXJpZnkiOiIzMDNjODUzNGJjMDA3Njc3Y2U0YWZlNGNkM2U4ZWYwZSIsImVuY3J5cHRfZGF0YSI6IkdjeVcwZ0VjSDZKdHk2Z2lRc3JvT0ZsenV0dXVsZ2VZc24yTUlEZ0p5Ly8zcVo4TUN0aE9NVHcvN1puY1h3TjhIWGhyYXdEME4xd2prb3RJWUM1cGdSL1o4ZlV5WnoxaHdhT3ZESlRmUThJN0dNakxPWWcvUmNqTksrVkFOMkt3d281dUZKRmdpVjFOK1BLWlFES2poSUc2ckhNZ25LZXgifQ=="
+            id="movieBoxPro"
+          ></iframe>
+        </div>
+          <div class="window_app" id="window_app_discord"></div>
+          <div class="window_app" id="window_app_rpanswers"></div>
+          <div class="window_app" id="window_app_snippet">
+            <iframe
+              class="window_app_iframe"
+              src="https://hoodgail.github.io/hood/snippet/?data=Ly9CeSBob29kZ2FpbA=="
+              id="snippet"
+            ></iframe>
+          </div>
+        </div>
+        <iframe id="__window_iframe"></iframe>
+      </div>
+    </div>
+  </div>
+  <div id="bottom">
+    <div id="bar"></div>
+  </div>
+  <div>
+    <script>
+
+    </script>
+
+    <script src="./index.js"></script>
+  </div>
+</div>

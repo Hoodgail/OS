@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<link rel=stylesheet href=./comu.css>
+</head>
+<body>
+  <div class="left">
+     <div class="members-count"></div>
+    <div id="label1">Your name</div>
+    <div class="me"></div>
+    <div class="rooms">
+      <div class="room">Global public room</div>
+    </div>
+    <div class="label">Connected users</div>
+   
+    <div class="members-list"></div>
+  </div>
+  <div class="right">
+    <div class="chat-title">Global public room</div>
+    <div class="messages"></div>
+    <form class="message-form" onsubmit="return false;">
+        <input id="name" placeholder="Your name" value="guest" type="text"/>
+      <input class="message-form__input" placeholder="Type a message.." type="text"/>
+
+      <input class="message-form__button" value="Send" type="submit"/>
+    </form>
+  </div>
+<script src=./js/comu.js></script>
+</body>
+</html>
